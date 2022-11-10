@@ -22,7 +22,7 @@ def contato(request):
             messages.success(request,'E-mail enviado com sucesso')
             form = ContatoForm
         else:
-            message.error(request, 'Erro ao enviar E-mail')
+            messages.error(request, 'Erro ao enviar E-mail')
 
     context = {
         'form': form
